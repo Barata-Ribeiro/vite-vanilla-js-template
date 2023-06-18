@@ -1,6 +1,6 @@
 # Vite Vanilla JS Template
 
-![screenshot](/public/assets/images/screenshot.png)
+## ![screenshot](/public/assets/images/screenshot.png)
 
 Initially built for personal use, I created this template for starting a new project with Vite.js and Vanilla Javascript. It is already set up with standard development tools like ESLint and Prettier for easy code formatting and linting and Vite for a robust, modern build process.
 
@@ -46,8 +46,9 @@ After cloning the template, make sure to clean up and update the following:
 2. Cleanup the README.md file.
 3. Adapt the LICENSE file to your project.
 4. Delete `images/vite.svg`, `images/javascript.svg`, `images/screenshot.png`, and `counter.js`.
-5. In the `main.js` file, leave only these import statements: `import "../styles/style.css";` and `import "the-new-css-reset/css/reset.css";`.
-6. Delete the .github folder.
+5. Delete the content from `styles/style.css`.
+6. In the `main.js` file, leave only these import statements: `import "../styles/style.css";` and `import "the-new-css-reset/css/reset.css";`.
+7. Delete the .github folder.
 
 ## Scripts
 
