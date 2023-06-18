@@ -66,18 +66,37 @@ h1 {
 }
 
 .card {
-  padding: 2em;
+  padding: 2em 2em 1em 2em;
 }
 
 .card #counter {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 360px) {
   .card #counter {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     margin-right: 0;
+    padding-bottom: 0;
   }
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tags p {
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  color: #a1571c;
+  background-color: #db9825;
 }
 
 .read-the-docs {
