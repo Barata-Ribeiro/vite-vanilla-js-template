@@ -69,6 +69,17 @@ h1 {
   padding: 2em;
 }
 
+.card #counter {
+  margin-right: .5rem;
+}
+
+@media (max-width: 360px) {
+  .card #counter {
+    margin-bottom: .5rem;
+    margin-right: 0;
+  }
+}
+
 .read-the-docs {
   color: #888;
 }

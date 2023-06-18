@@ -1,8 +1,8 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import "the-new-css-reset/css/reset.css";
 import "../styles/style.css";
-import javascriptLogo from "../../public/images/javascript.svg";
-import viteLogo from "../../public/vite.svg";
+import javascriptLogo from "../../public/assets/images/javascript.svg";
+import viteLogo from "../../public/assets/images/vite.svg";
 import setupCounter from "./counter";
 
 document.querySelector("#app").innerHTML = `
@@ -18,6 +18,14 @@ document.querySelector("#app").innerHTML = `
     <div class="card">
       <button id="counter" type="button"></button>
       <button id="gitRepo" type="button"></button>
+    </div>
+    <div class="tags">
+      <p>Vite</p>
+      <p>ESLint</p>
+      <p>Prettier</p>
+      <p>PostCSS</p>
+      <p>Autoprefixer</p>
+      <p>CSS Reset</p>
     </div>
     <p class="read-the-docs">
       Click on the Vite logo to learn more about Vite.js.
