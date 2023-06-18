@@ -1,19 +1,21 @@
 # Vite Vanilla JS Template
 
-This is a template for starting a new project with Vite.js and Vanilla Javascript. It is already setup with common development tools like ESLint and Prettier for easy code formatting and linting, and Vite for a powerful, modern build process.
+![screenshot](/public/assets/images/screenshot.png)
+
+Initially built for personal use, I created this template for starting a new project with Vite.js and Vanilla Javascript. It is already set up with standard development tools like ESLint and Prettier for easy code formatting and linting and Vite for a robust, modern build process.
 
 ## Dependencies
 
 This template uses the following dependencies:
 
-- **Vite:** A modern frontend build tool.
-- **ESLint:** An open-source JavaScript linting utility.
-- **Prettier:** An opinionated code formatter.
-- **eslint-config-airbnb-base and eslint-config-prettier:** A set of ESLint configurations adhering to Airbnb's base JS style guide.
-- **eslint-plugin-import and eslint-plugin-prettier:** ESLint plugins to help enforce ES2015+ import/export syntax.
-- **autoprefixer and postcss:** Tools for handling CSS prefixes and transformations.
-- **vite-plugin-eslint:** A Vite plugin for ESLint.
-- **the-new-css-reset:** A modern CSS reset.
+- **Vite:** A next-generation frontend build tool that offers fast dev server and optimized builds.
+- **ESLint:** An open-source JavaScript linting utility that helps to maintain a consistent code style.
+- **Prettier:** An opinionated code formatter that enforces a consistent code style across your project.
+- **eslint-config-airbnb-base and eslint-config-prettier:** ESLint configurations adhering to Airbnb's base JS style guide and disabling stylistic rules that might conflict with Prettier.
+- **eslint-plugin-import and eslint-plugin-prettier:** ESLint plugins that enforce ES2015+ import/export syntax and integrates Prettier with ESLint.
+- **autoprefixer and postcss:** Autoprefixer automatically adds vendor prefixes to CSS, while PostCSS provides a way to transform CSS with JavaScript.
+- **vite-plugin-eslint:** Integrates ESLint into the Vite build process for on-the-fly linting.
+- **[the-new-css-reset](https://elad2412.github.io/the-new-css-reset/):** A modern, CSS reset for your styles.
 
 ## Usage
 
@@ -35,6 +37,17 @@ npm install
 
 #degit documentation at: https://github.com/Rich-Harris/degit
 ```
+
+## Post-Cloning Steps
+
+After cloning the template, make sure to clean up and update the following:
+
+1. Remove the .git directory and run `git init` to clean the commit history.
+2. Cleanup the README.md file.
+3. Adapt the LICENSE file to your project.
+4. Delete `images/vite.svg`, `images/javascript.svg`, `images/screenshot.png`, and `counter.js`.
+5. In the `main.js` file, leave only these import statements: `import "../styles/style.css";` and `import "the-new-css-reset/css/reset.css";`.
+6. Delete the .github folder.
 
 ## Scripts
 
@@ -63,37 +76,27 @@ npm run preview
 npm run deploy
 ```
 
-## Clean Up
-
-After cloning the template, make sure to clean up and update the following:
-
-1. Remove the .git directory and run `git init` to clean the commit history.
-2. Cleanup the README.md file.
-3. Adapt the LICENSE file to your project.
-4. Delete `vite.svg`, `images/javascript.svg`, and `counter.js`.
-5. In the `main.js` file, leave only these import statements: `import "../styles/style.css";` and `import "the-new-css-reset/css/reset.css";`.
-6. Delete the .github folder.
-
 ## Folder Structure
 
 This is the structure of the project:
 
 ```plaintext
 /
-├── node_modules
+├── node_modules             # Node.js dependencies for the project.
 ├── public
-│   ├── images
+│   ├── assets
+│   │   ├── images           # Store your images here.
 ├── src
 │   ├── js
-│   │   ├── main.js
+│   │   ├── main.js          # Main Javascript file of your project.
 │   ├── styles
-│   │   ├── style.css
-│   ├── index.html
-├── configuration files...
+│   │   ├── style.css        # Main CSS styles for your project.
+│   ├── index.html           # The HTML file for your project.
+├── configuration files...   # Configuration files for various tools (ESLint, Prettier, etc.).
 ```
 
 ## License
 
 This template was created under the [MIT License](LICENSE.md).
 
-Happy coding!
+**Happy coding!** 👨‍💻
