@@ -1,0 +1,106 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #fdfaed;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #db9825;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #c1761e;
+}
+a:active {
+  color: #a1571c;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 20rem;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 12rem;
+  padding: 1.5em;
+  will-change: filter;
+  transition: -webkit-filter 300ms;
+  transition: filter 300ms;
+  transition: filter 300ms, -webkit-filter 300ms;
+}
+.logo:hover {
+  -webkit-filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  -webkit-filter: drop-shadow(0 0 2em #f7df1eaa);
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 3.125rem;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #db9825;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #c1761e;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #3e1c0a;
+    background-color: #fdfaed;
+  }
+  a:hover {
+    color: #c1761e;
+  }
+  button {
+    background-color: #f3e5ab;
+  }
+}

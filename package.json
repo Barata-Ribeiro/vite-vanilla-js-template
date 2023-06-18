@@ -1,0 +1,43 @@
+{
+  "name": "vite-vanilla-js",
+  "description": "Vite Vanilla JavaScript Template",
+  "version": "0.0.0",
+  "type": "module",
+  "keywords": [
+    "template",
+    "scaffold",
+    "vanilla",
+    "javascript",
+    "eslint",
+    "prettier",
+    "postcss",
+    "vite",
+    "vitejs",
+    "vite-template",
+    "vitejs-template"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "lint": "eslint --ext .js ./",
+    "lint:fix": "eslint --fix --ext .js ./",
+    "format": "prettier --write \"./**/*.{js,jsx,json,css}\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "postcss": "^8.4.24",
+    "prettier": "^2.8.8",
+    "vite": "4.3.9",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "dependencies": {
+    "the-new-css-reset": "^1.8.6"
+  }
+}
