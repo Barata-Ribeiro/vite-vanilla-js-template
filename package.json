@@ -38,6 +38,6 @@
     "vite-plugin-eslint": "^1.8.1"
   },
   "dependencies": {
-    "the-new-css-reset": "^1.8.6"
+    "the-new-css-reset": "^1.9.0"
   }
 }
