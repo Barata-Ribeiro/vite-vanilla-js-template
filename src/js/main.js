@@ -5,6 +5,14 @@ import javascriptLogo from "../../public/assets/images/javascript.svg";
 import viteLogo from "../../public/assets/images/vite.svg";
 import setupCounter from "./counter";
 
+const dependencies = [
+  "ESlint",
+  "Prettier",
+  "PostCSS",
+  "Autoprefixer",
+  "CSS Reset",
+];
+
 document.querySelector("#app").innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -19,19 +27,17 @@ document.querySelector("#app").innerHTML = `
       <button id="counter" type="button"></button>
       <button id="gitRepo" type="button"></button>
     </div>
-    <div class="tags">
-      <p>Vite</p>
-      <p>ESLint</p>
-      <p>Prettier</p>
-      <p>PostCSS</p>
-      <p>Autoprefixer</p>
-      <p>CSS Reset</p>
+    <div class="tags">      
     </div>
     <p class="read-the-docs">
       Click on the Vite logo to learn more about Vite.js.
     </p>
   </div>
 `;
+
+document.querySelector(".tags").innerHTML = dependencies
+  .map(dependency => `<p>${dependency}</p>`)
+  .join("");
 
 document.querySelector(
   "#gitRepo"
