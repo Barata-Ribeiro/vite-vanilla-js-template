@@ -4,18 +4,31 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["airbnb-base", "eslint:recommended", "prettier"],
-  "plugins": ["prettier"],
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/recommended"
+  ],
+  "plugins": ["prettier", "import"],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
   },
   "rules": {
     "prettier/prettier": "error",
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": false,
+        "devDependencies": true,
         "optionalDependencies": false,
         "peerDependencies": false
       }

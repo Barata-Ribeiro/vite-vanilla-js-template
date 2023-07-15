@@ -1,12 +1,11 @@
-import { defineConfig } from "vite";
-import eslint from "vite-plugin-eslint";
-import autoprefixer from "autoprefixer";
+import { defineConfig } from 'vite';
+import eslint from 'vite-plugin-eslint';
 
 export default defineConfig({
-  root: "src",
-  base: "./",
+  publicDir: 'public',
+  root: './',
   build: {
-    outDir: "../dist",
+    outDir: 'dist',
   },
   plugins: [
     eslint({
@@ -14,9 +13,4 @@ export default defineConfig({
       fix: true,
     }),
   ],
-  css: {
-    postcss: {
-      plugins: [autoprefixer({})],
-    },
-  },
 });
