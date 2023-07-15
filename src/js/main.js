@@ -1,19 +1,21 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import "the-new-css-reset/css/reset.css";
-import "../styles/style.css";
-import javascriptLogo from "../../public/assets/images/javascript.svg";
-import viteLogo from "../../public/assets/images/vite.svg";
-import setupCounter from "./counter";
+import 'the-new-css-reset/css/reset.css';
+import '../styles/style.css';
+
+import viteLogo from '../assets/images/vite.svg';
+import javascriptLogo from '../assets/images/javascript.svg';
 
 const dependencies = [
-  "ESlint",
-  "Prettier",
-  "PostCSS",
-  "Autoprefixer",
-  "CSS Reset",
+  'ESlint',
+  'Prettier',
+  'PostCSS',
+  'PostCSS Nesting',
+  'Autoprefixer',
+  'CSS Nano',
+  'CSS Reset',
 ];
 
-document.querySelector("#app").innerHTML = `
+document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="${viteLogo}" class="logo" alt="Vite logo" />
@@ -27,7 +29,7 @@ document.querySelector("#app").innerHTML = `
       <button id="counter" type="button"></button>
       <button id="gitRepo" type="button"></button>
     </div>
-    <div class="tags">      
+    <div class="tags">
     </div>
     <p class="read-the-docs">
       Click on the Vite logo to learn more about Vite.js.
@@ -35,12 +37,23 @@ document.querySelector("#app").innerHTML = `
   </div>
 `;
 
-document.querySelector(".tags").innerHTML = dependencies
-  .map(dependency => `<p>${dependency}</p>`)
-  .join("");
+const setupCounter = (element) => {
+  let counter = 0;
+  const setCounter = (count) => {
+    counter = count;
+    // eslint-disable-next-line no-param-reassign
+    element.innerHTML = `count is ${counter}`;
+  };
+  element.addEventListener('click', () => setCounter(counter + 1));
+  setCounter(0);
+};
+
+setupCounter(document.querySelector('#counter'));
+
+document.querySelector('.tags').innerHTML = dependencies
+  .map((dependency) => `<p>${dependency}</p>`)
+  .join('');
 
 document.querySelector(
-  "#gitRepo"
+  '#gitRepo',
 ).innerHTML = `<a href="https://github.com/Barata-Ribeiro/vite-vanilla-js-template" target="_blank" rel="noopener noreferrer">Repository</a>`;
-
-setupCounter(document.querySelector("#counter"));
