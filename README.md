@@ -2,7 +2,7 @@
 
 ![screenshot](/public/screenshot.png)
 
-Initially built for personal use, I created this template for starting a new project with Vite.js and Vanilla Javascript. It is already set up with standard development tools like ESLint and Prettier for easy code formatting and linting, and Vite for a robust, modern build process.
+Initially built for personal use, I created this template for starting a new project with Vite.js and Vanilla Javascript. It is already set up with standard development tools like ESLint and Prettier for easy code formatting and linting, with Vite for a robust, modern build process.
 
 ## Dependencies
 
@@ -15,58 +15,75 @@ This template uses the following dependencies:
 - **[eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) and [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier):** ESLint plugins that enforce ES2015+ import/export syntax and integrate Prettier with ESLint.
 - **[autoprefixer](https://www.npmjs.com/package/autoprefixer) and [postcss](https://postcss.org/):** Autoprefixer automatically adds vendor prefixes to CSS, while PostCSS provides a way to transform CSS with JavaScript.
 - **[cssnano](https://cssnano.co/):** A tool that helps to compress and optimize CSS files.
-- **[postcss-nesting](https://www.npmjs.com/package/postcss-nesting):** A PostCSS plugin that allows you to use modern, CSS Nesting in your stylesheets.
+- **[postcss-nesting](https://www.npmjs.com/package/postcss-nesting):** A PostCSS plugin that allows you to use modern CSS Nesting in your stylesheets.
 - **[vite-plugin-eslint](https://www.npmjs.com/package/vite-plugin-eslint):** Integrates ESLint into the Vite build process for on-the-fly linting.
 - **[the-new-css-reset](https://elad2412.github.io/the-new-css-reset/):** A modern, CSS reset for your styles.
 
-## Usage
+## Cloning
 
-To start using this template, clone the repository with this command:
+1. To start using this template, clone the repository with this command:
 
 ```bash
-git clone https://github.com/Barata-Ribeiro/vite-vanilla-js-template
+git clone https://github.com/Barata-Ribeiro/vite-vanilla-js-template.git
+```
+
+2. Then proceed to the folder and install dependencies:
+
+```bash
 cd vite-vanilla-js-template
 npm install
 ```
 
-or
+**or**
 
 ```bash
 npm install -g degit # if you don't have degit installed...
-degit Barata-Ribeiro/vite-vanilla-js-template
-cd vite-vanilla-js-template
-npm install
 
 #degit documentation at: https://github.com/Rich-Harris/degit
 ```
+
+1. Use 'degit' to create a folder project using this template:
+
+```bash
+degit Barata-Ribeiro/vite-vanilla-js-template your-project-name
+```
+
+2. Then proceed to the folder and install dependencies:
+
+```bash
+cd your-project-name
+npm install
+```
+
 
 ## Post-Cloning Steps
 
 After cloning the template, make sure to clean up and update the following:
 
 1. Remove the .git directory and run `git init` to clean the commit history.
-2. Cleanup the README.md file.
+2. Clean up the README.md file.
 3. Adapt the LICENSE file to your project.
 4. Delete `public/vite.svg`, `public/screenshot`, `src/assets/images/javascript.svg`, and `src/assets/images/vite.svg`.
 5. Delete the content from `src/styles/style.css`.
 6. In the `src/js/main.js` file, leave only these import statements: `import "../../styles/style.css";` and `import "the-new-css-reset/css/reset.css";`.
-7. Delete the .github folder.
+7. Adapt the `package.json` file with your project's own information.
+8. Delete the .github folder.
 
 ## Scripts
 
 Use the following scripts for your development workflow:
 
 ```bash
-# Start development server
+# Start the development server
 npm run dev
 
-# Lint your code
+# Checks your code for any linting errors
 npm run lint
 
-# Fix linting errors
+# Tries to automatically fix any linting errors present in your code
 npm run lint:fix
 
-# Format your code
+# Formats your code in a consistent, predefined style using Prettier
 npm run format
 
 # Build for production
