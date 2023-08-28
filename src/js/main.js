@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import 'the-new-css-reset/css/reset.css';
 import '../styles/style.css';
 
@@ -24,10 +23,10 @@ document.querySelector('#app').innerHTML = `
       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
     <h1>Vanilla Vite!</h1>
-    <h2>Template by <cite><a href="https://github.com/Barata-Ribeiro" target="_blank" rel="noopener noreferrer">Barata-Ribeiro</a></cite></h2>
+    <h2>Template by <cite><a class="author" href="https://github.com/Barata-Ribeiro" target="_blank" rel="noopener noreferrer">Barata-Ribeiro</a></cite></h2>
     <div class="card">
       <button id="counter" type="button"></button>
-      <button id="gitRepo" type="button"></button>
+      <a class="gitRepo" href="https://github.com/Barata-Ribeiro/vite-vanilla-js-template" target="_blank" rel="noopener noreferrer">Repository</a>
     </div>
     <div class="tags">
     </div>
@@ -39,10 +38,10 @@ document.querySelector('#app').innerHTML = `
 
 const setupCounter = (element) => {
   let counter = 0;
+  const counterElement = element;
   const setCounter = (count) => {
     counter = count;
-    // eslint-disable-next-line no-param-reassign
-    element.innerHTML = `count is ${counter}`;
+    counterElement.innerHTML = `count is ${counter}`;
   };
   element.addEventListener('click', () => setCounter(counter + 1));
   setCounter(0);
@@ -53,7 +52,3 @@ setupCounter(document.querySelector('#counter'));
 document.querySelector('.tags').innerHTML = dependencies
   .map((dependency) => `<p>${dependency}</p>`)
   .join('');
-
-document.querySelector(
-  '#gitRepo',
-).innerHTML = `<a href="https://github.com/Barata-Ribeiro/vite-vanilla-js-template" target="_blank" rel="noopener noreferrer">Repository</a>`;
