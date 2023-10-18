@@ -1,7 +1,7 @@
 {
-  "name": "vite-vanilla-js",
+  "name": "vite-vanilla-js-template",
   "description": "ViteJS starter template for vanilla JavaScript with some basic dependencies.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "keywords": [
     "vanilla",
@@ -39,7 +39,7 @@
     "postcss": "^8.4.31",
     "postcss-nesting": "^12.0.1",
     "prettier": "^3.0.3",
-    "vite": "4.4.11",
+    "vite": "4.5.0",
     "vite-plugin-eslint": "^1.8.1"
   },
   "dependencies": {
