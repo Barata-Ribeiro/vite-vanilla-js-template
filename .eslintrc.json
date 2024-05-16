@@ -17,14 +17,6 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [".js"],
-        "moduleDirectory": ["node_modules", "src/"]
-      }
-    }
-  },
   "rules": {
     "prettier/prettier": "error",
     "no-console": "error",
@@ -33,6 +25,16 @@
       {
         "devDependencies": true
       }
-    ]
+    ],
+    "import/unambiguous": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js"],
+        "path": ["src"],
+        "moduleDirectory": ["node_modules"]
+      }
+    }
   }
 }
