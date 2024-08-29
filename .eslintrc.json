@@ -2,7 +2,7 @@
   "root": true,
   "env": {
     "browser": true,
-    "es2023": true,
+    "es6": true,
     "node": true
   },
   "extends": [
@@ -12,7 +12,10 @@
     "plugin:prettier/recommended",
     "eslint-config-prettier"
   ],
-  "plugins": ["import", "prettier"],
+  "plugins": [
+    "import",
+    "prettier"
+  ],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
@@ -31,9 +34,15 @@
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".js"],
-        "path": ["src"],
-        "moduleDirectory": ["node_modules"]
+        "extensions": [
+          ".js"
+        ],
+        "path": [
+          "src"
+        ],
+        "moduleDirectory": [
+          "node_modules"
+        ]
       }
     }
   }

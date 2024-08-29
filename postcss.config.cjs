@@ -7,7 +7,7 @@ module.exports = {
     'postcss-nesting': {},
     autoprefixer: {},
     cssnano: {
-      preset: 'default'
+      preset: 'default',
     },
   },
 };
