@@ -1,7 +1,7 @@
 {
   "name": "vite-vanilla-js-template",
   "description": "ViteJS starter template for vanilla JavaScript with some basic dependencies.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "keywords": [
     "vanilla",
