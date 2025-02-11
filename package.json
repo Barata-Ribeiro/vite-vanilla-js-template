@@ -36,7 +36,7 @@
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.3",
-    "postcss": "^8.5.1",
+    "postcss": "^8.5.2",
     "postcss-nesting": "^13.0.1",
     "prettier": "^3.4.2",
     "vite": "6.1.0",
