@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import { defineConfig } from 'vite';
 import eslint from 'vite-plugin-eslint';
 
 export default defineConfig({
@@ -14,12 +14,20 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            return id
-              .toString()
-              .split('node_modules/')[1]
-              .split('/')[0]
-              .toString();
+            const modulePath = id.split('node_modules/')[1];
+
+            const topLevelFolder = modulePath?.split('/')[0];
+
+            if (!topLevelFolder) {
+              const scopedPackageName = modulePath?.split('/')[1];
+              return scopedPackageName?.split('@')[
+                scopedPackageName.startsWith('@') ? 1 : 0
+              ];
+            }
+
+            return topLevelFolder;
           }
+
           return null;
         },
       },
