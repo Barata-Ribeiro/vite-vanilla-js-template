@@ -11,7 +11,8 @@ This template uses the following dependencies:
 - **[Vite](https://vitejs.dev/):** A next-generation frontend build tool that offers a fast dev server and optimized builds.
 - **[ESLint](https://eslint.org/):** An open-source JavaScript linting utility that helps maintain a consistent code style.
 - **[Prettier](https://prettier.io/):** An opinionated code formatter that enforces a consistent style across your project.
-- **[eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base) and [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier):** ESLint configurations adhering to Airbnb's base JS style guide and disabling stylistic rules that might conflict with Prettier.
+- **[@eslint/js](https://www.npmjs.com/package/@eslint/js) and [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier):** The official ESLint recommended config via `@eslint/js` (used with ESLint v9) and a Prettier-compatible config that disables stylistic rules which might conflict with Prettier.
+
 - **[eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) and [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier):** ESLint plugins that enforce ES2015+ import/export syntax and integrate Prettier with ESLint.
 - **[autoprefixer](https://www.npmjs.com/package/autoprefixer) and [postcss](https://postcss.org/):** Autoprefixer automatically adds vendor prefixes to CSS, while PostCSS provides a way to transform CSS with JavaScript.
 - **[cssnano](https://cssnano.github.io/cssnano/):** A tool that helps to compress and optimize CSS files.
@@ -54,7 +55,6 @@ degit Barata-Ribeiro/vite-vanilla-js-template your-project-name
 cd your-project-name
 npm install
 ```
-
 
 ## Post-Cloning Steps
 
@@ -111,8 +111,7 @@ This is the structure of the project:
 │   ├── js                  # Javascript files of your project
 │   ├── styles              # CSS styles for your project
 ├── .editorconfig           # Configuration for the EditorConfig plugin
-├── .eslintignore           # Files to be ignored by ESLint
-├── .eslintrc.json          # Configuration for ESLint
+├── eslint.config.js       # Configuration for ESLint (using the new Flat Config API)
 ├── .gitignore              # Files and folders to be ignored by Git
 ├── .prettierignore         # Files to be ignored by Prettier
 ├── .prettierrc             # Configuration for Prettier
