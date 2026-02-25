@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "autoprefixer": "^10.4.24",
+    "autoprefixer": "^10.4.25",
     "cssnano": "^7.1.2",
     "eslint": "^10.0.2",
     "eslint-config-prettier": "^10.1.8",
