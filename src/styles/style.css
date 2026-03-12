@@ -1,6 +1,7 @@
 :root {
-  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-family:
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --color-light: #fdfaed;
   --color-dark: #3e1c0a;
   --color-primary: #db9825;
@@ -33,33 +34,70 @@ h1 {
   text-align: center;
 }
 
-.logo {
-  height: 12rem;
-  padding: 1.5rem;
-  will-change: filter;
-  transition: filter 300ms;
+.hero {
+  position: relative;
+
+  .base,
+  .framework,
+  .vite {
+    inset-inline: 0;
+    margin: 0 auto;
+  }
+
+  .base {
+    width: 170px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .framework,
+  .vite {
+    position: absolute;
+  }
+
+  .framework {
+    z-index: 1;
+    top: 34px;
+    height: 28px;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
+      scale(1.4);
+  }
+
+  .vite {
+    z-index: 0;
+    top: 107px;
+    height: 26px;
+    width: auto;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
+      scale(0.8);
+  }
 }
-.logo:hover {
+
+.hero:hover {
   filter: drop-shadow(0 0 2rem var(--color-logo-shadow));
 }
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2rem var(--color-logo-vanilla-shadow));
+
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
 }
 
 .card {
-  padding: 2rem;
-}
-
-.card #counter {
-  margin-right: 0.5rem;
-}
-
-@media (max-width: 360px) {
-  .card #counter {
-    margin-bottom: 0.5rem;
-    margin-right: 0;
-    padding-bottom: 0;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 1rem;
 }
 
 .tags {

@@ -1,7 +1,7 @@
-import { resolve, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { resolve, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import eslint from 'vite-plugin-eslint2';
 import { defineConfig } from 'vite';
-import eslint from 'vite-plugin-eslint';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -10,7 +10,7 @@ export default defineConfig({
   root: './',
   build: {
     outDir: 'dist',
-    rollupOptions: {
+    rolldownOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
       },
@@ -33,9 +33,9 @@ export default defineConfig({
 
           return null;
         },
+        minify: true,
       },
     },
-    minify: 'esbuild',
   },
   plugins: [
     eslint({

@@ -53,7 +53,8 @@ degit Barata-Ribeiro/vite-vanilla-js-template your-project-name
 
 ```bash
 cd your-project-name
-npm install
+npm install --legacy-peer-deps
+# Until some deps are properly updated to work with eslint 10, use the --legacy-peer-deps flag to avoid dependency conflicts. Remove this flag once all dependencies are updated to work with eslint 10.
 ```
 
 ## Post-Cloning Steps
