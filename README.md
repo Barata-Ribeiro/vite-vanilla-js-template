@@ -32,7 +32,8 @@ git clone https://github.com/Barata-Ribeiro/vite-vanilla-js-template.git
 
 ```bash
 cd vite-vanilla-js-template
-npm install
+npm install --legacy-peer-deps
+# Until some deps are properly updated to work with eslint 10, use the --legacy-peer-deps flag to avoid dependency conflicts. Remove this flag once all dependencies are updated to work with eslint 10.
 ```
 
 **or**
