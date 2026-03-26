@@ -40,7 +40,7 @@
     "postcss": "^8.5.8",
     "postcss-nesting": "^14.0.0",
     "prettier": "^3.8.1",
-    "vite": "^8.0.2",
+    "vite": "^8.0.3",
     "vite-plugin-eslint2": "^5.1.0"
   },
   "dependencies": {
