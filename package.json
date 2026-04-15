@@ -39,7 +39,7 @@
     "globals": "^17.5.0",
     "postcss": "^8.5.9",
     "postcss-nesting": "^14.0.0",
-    "prettier": "^3.8.2",
+    "prettier": "^3.8.3",
     "vite": "^8.0.8",
     "vite-plugin-eslint2": "^5.1.0"
   },
