@@ -41,7 +41,7 @@
     "postcss-nesting": "^14.0.0",
     "prettier": "^3.8.4",
     "vite": "^8.1.0",
-    "vite-plugin-eslint2": "^5.2.0"
+    "vite-plugin-eslint2": "^5.3.0"
   },
   "dependencies": {
     "the-new-css-reset": "^1.11.3"
