@@ -38,7 +38,7 @@
     "eslint-plugin-prettier": "^5.5.6",
     "globals": "^17.7.0",
     "postcss": "^8.5.22",
-    "postcss-nesting": "^14.0.0",
+    "postcss-nesting": "^14.0.1",
     "prettier": "^3.9.6",
     "vite": "^8.1.5",
     "vite-plugin-eslint2": "^5.3.0"
