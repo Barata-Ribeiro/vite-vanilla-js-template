@@ -31,7 +31,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "autoprefixer": "^10.6.1",
-    "cssnano": "^9.1.1",
+    "cssnano": "^9.2.0",
     "eslint": "^10",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
